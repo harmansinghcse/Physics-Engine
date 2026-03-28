@@ -1,0 +1,3 @@
+C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/physics_engine.dir
+C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/edit_cache.dir
+C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/rebuild_cache.dir

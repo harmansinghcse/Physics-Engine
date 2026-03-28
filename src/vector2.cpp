@@ -24,4 +24,8 @@ Vector2 Vector2::normalize() const{
     return Vector2{x / mag, y / mag};
 }
 
+float Vector2::dot(const Vector2 &other) const{
+    return x * other.x + y * other.y;
+}
+
 

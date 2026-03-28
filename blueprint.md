@@ -34,3 +34,7 @@ Each update step advances simulation by fixed time interval (e.g., 0.016s)
 
 - It is a struct
 - It uses float
+
+## How it moves
+- Gravity changes velocity
+- velocity changes position

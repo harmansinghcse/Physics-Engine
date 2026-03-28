@@ -17,4 +17,6 @@ struct Vector2
     float magnitude() const;
             
     Vector2 normalize() const;
+
+    float dot(const Vector2 &other) const;
 };
