@@ -1,4 +1,4 @@
-#include "physics/collisions.h"
+#include "physics\collisions.h"
 #include "body.h"
 #include "vector2.h"
 
@@ -14,7 +14,7 @@ void resolveCollision(body& A, body& B){
     Vector2 normal_unit = normal.normalize();
     Vector2 rv = A.velocity - B.velocity;
     float velocity_along_normal = rv.dot(normal_unit);
-    if(velocity_along_normal < 0){
+    if(velocity_along_normal > 0){
         Vector2 temp = A.velocity;
         A.velocity = B.velocity;
         B.velocity = temp; 

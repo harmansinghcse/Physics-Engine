@@ -11,11 +11,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/msys64/mingw64/share/cmake/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:3 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Path to a program."
+    description: "Program used to build from build.ninja files."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -25,56 +25,91 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "mingw32-make.exe"
+      - "ninja-build"
+      - "ninja"
+      - "samu"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
-      - "/REGISTRY-NOTFOUND/bin/"
-      - "c:/MinGW/bin/"
-      - "/MinGW/bin/"
-      - "/REGISTRY-NOTFOUND/MinGW/bin/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
-      - "C:/msys64/mingw64/bin/mingw32-make.exe.com"
-    found: "C:/msys64/mingw64/bin/mingw32-make.exe"
+      - "C:/msys64/mingw64/bin/ninja-build.com"
+      - "C:/msys64/mingw64/bin/ninja-build.exe"
+      - "C:/msys64/mingw64/bin/ninja-build"
+      - "C:/msys64/mingw64/bin/ninja.com"
+    found: "C:/msys64/mingw64/bin/ninja.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "C compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cc"
+      - "gcc"
+      - "cl"
+      - "bcc"
+      - "xlc"
+      - "icx"
+      - "clang"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
+      - "C:/msys64/usr/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/cc.com"
+    found: "C:/msys64/mingw64/bin/cc.exe"
+    search_context:
+      ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -103,26 +138,16 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "message-v1"
     backtrace:
@@ -132,7 +157,7 @@ events:
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/msys64/mingw64/bin/gcc.exe 
+      Compiler: C:/msys64/mingw64/bin/cc.exe 
       Build flags: 
       Id flags:  
       
@@ -166,49 +191,31 @@ events:
       - "ar"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ar.com"
     found: "C:/msys64/mingw64/bin/ar.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -230,49 +237,31 @@ events:
       - "ranlib"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ranlib.com"
     found: "C:/msys64/mingw64/bin/ranlib.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -294,49 +283,31 @@ events:
       - "strip"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/strip.com"
     found: "C:/msys64/mingw64/bin/strip.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -358,49 +329,31 @@ events:
       - "ld"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/ld.com"
     found: "C:/msys64/mingw64/bin/ld.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -422,49 +375,31 @@ events:
       - "nm"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/nm.com"
     found: "C:/msys64/mingw64/bin/nm.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -486,49 +421,31 @@ events:
       - "objdump"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/objdump.com"
     found: "C:/msys64/mingw64/bin/objdump.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -550,49 +467,31 @@ events:
       - "objcopy"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/objcopy.com"
     found: "C:/msys64/mingw64/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -614,49 +513,31 @@ events:
       - "readelf"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/readelf.com"
     found: "C:/msys64/mingw64/bin/readelf.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -678,49 +559,31 @@ events:
       - "dlltool"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/dlltool.com"
     found: "C:/msys64/mingw64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -742,49 +605,31 @@ events:
       - "addr2line"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/addr2line.com"
     found: "C:/msys64/mingw64/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -806,39 +651,25 @@ events:
       - "tapi"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/tapi.com"
       - "C:/msys64/mingw64/bin/tapi.exe"
       - "C:/msys64/mingw64/bin/tapi"
+      - "C:/msys64/usr/local/bin/tapi.com"
+      - "C:/msys64/usr/local/bin/tapi.exe"
+      - "C:/msys64/usr/local/bin/tapi"
       - "C:/msys64/usr/bin/tapi.com"
       - "C:/msys64/usr/bin/tapi.exe"
       - "C:/msys64/usr/bin/tapi"
-      - "D:/applications/Microsoft VS Code/tapi.com"
-      - "D:/applications/Microsoft VS Code/tapi.exe"
-      - "D:/applications/Microsoft VS Code/tapi"
-      - "C:/Program Files/Python314/Scripts/tapi.com"
-      - "C:/Program Files/Python314/Scripts/tapi.exe"
-      - "C:/Program Files/Python314/Scripts/tapi"
-      - "C:/Program Files/Python314/tapi.com"
-      - "C:/Program Files/Python314/tapi.exe"
-      - "C:/Program Files/Python314/tapi"
       - "C:/Windows/System32/tapi.com"
       - "C:/Windows/System32/tapi.exe"
       - "C:/Windows/System32/tapi"
@@ -851,57 +682,29 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/tapi"
-      - "C:/Windows/System32/OpenSSH/tapi.com"
-      - "C:/Windows/System32/OpenSSH/tapi.exe"
-      - "C:/Windows/System32/OpenSSH/tapi"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/tapi.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/tapi.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/tapi"
-      - "C:/Program Files/CMake/bin/tapi.com"
-      - "C:/Program Files/CMake/bin/tapi.exe"
-      - "C:/Program Files/CMake/bin/tapi"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/tapi"
-      - "D:/applications/Git/cmd/tapi.com"
-      - "D:/applications/Git/cmd/tapi.exe"
-      - "D:/applications/Git/cmd/tapi"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/tapi.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/tapi.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/tapi"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/tapi.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/tapi.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/tapi"
-      - "D:/applications/Microsoft VS Code/bin/tapi.com"
-      - "D:/applications/Microsoft VS Code/bin/tapi.exe"
-      - "D:/applications/Microsoft VS Code/bin/tapi"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/tapi.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/tapi.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/tapi"
+      - "C:/msys64/usr/bin/site_perl/tapi.com"
+      - "C:/msys64/usr/bin/site_perl/tapi.exe"
+      - "C:/msys64/usr/bin/site_perl/tapi"
+      - "C:/msys64/usr/bin/vendor_perl/tapi.com"
+      - "C:/msys64/usr/bin/vendor_perl/tapi.exe"
+      - "C:/msys64/usr/bin/vendor_perl/tapi"
+      - "C:/msys64/usr/bin/core_perl/tapi.com"
+      - "C:/msys64/usr/bin/core_perl/tapi.exe"
+      - "C:/msys64/usr/bin/core_perl/tapi"
     found: false
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -926,39 +729,25 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ar-15.2.com"
       - "C:/msys64/mingw64/bin/gcc-ar-15.2.exe"
       - "C:/msys64/mingw64/bin/gcc-ar-15.2"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.2.com"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.2.exe"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.2"
       - "C:/msys64/usr/bin/gcc-ar-15.2.com"
       - "C:/msys64/usr/bin/gcc-ar-15.2.exe"
       - "C:/msys64/usr/bin/gcc-ar-15.2"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.2.com"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.2.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.2"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.2.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.2.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.2"
-      - "C:/Program Files/Python314/gcc-ar-15.2.com"
-      - "C:/Program Files/Python314/gcc-ar-15.2.exe"
-      - "C:/Program Files/Python314/gcc-ar-15.2"
       - "C:/Windows/System32/gcc-ar-15.2.com"
       - "C:/Windows/System32/gcc-ar-15.2.exe"
       - "C:/Windows/System32/gcc-ar-15.2"
@@ -971,48 +760,24 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.2.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.2.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.2"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.2.com"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.2.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.2"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.2.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.2.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.2"
-      - "D:/applications/Git/cmd/gcc-ar-15.2.com"
-      - "D:/applications/Git/cmd/gcc-ar-15.2.exe"
-      - "D:/applications/Git/cmd/gcc-ar-15.2"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.2.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.2.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.2"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.2.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.2.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.2"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.2.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.2.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.2"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.2.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.2.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.2"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.2.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.2.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.2"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2"
       - "C:/msys64/mingw64/bin/gcc-ar-15.com"
       - "C:/msys64/mingw64/bin/gcc-ar-15.exe"
       - "C:/msys64/mingw64/bin/gcc-ar-15"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.com"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.exe"
+      - "C:/msys64/usr/local/bin/gcc-ar-15"
       - "C:/msys64/usr/bin/gcc-ar-15.com"
       - "C:/msys64/usr/bin/gcc-ar-15.exe"
       - "C:/msys64/usr/bin/gcc-ar-15"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.com"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15"
-      - "C:/Program Files/Python314/gcc-ar-15.com"
-      - "C:/Program Files/Python314/gcc-ar-15.exe"
-      - "C:/Program Files/Python314/gcc-ar-15"
       - "C:/Windows/System32/gcc-ar-15.com"
       - "C:/Windows/System32/gcc-ar-15.exe"
       - "C:/Windows/System32/gcc-ar-15"
@@ -1025,48 +790,24 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.com"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar-15"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15"
-      - "D:/applications/Git/cmd/gcc-ar-15.com"
-      - "D:/applications/Git/cmd/gcc-ar-15.exe"
-      - "D:/applications/Git/cmd/gcc-ar-15"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15"
       - "C:/msys64/mingw64/bin/gcc-ar15.com"
       - "C:/msys64/mingw64/bin/gcc-ar15.exe"
       - "C:/msys64/mingw64/bin/gcc-ar15"
+      - "C:/msys64/usr/local/bin/gcc-ar15.com"
+      - "C:/msys64/usr/local/bin/gcc-ar15.exe"
+      - "C:/msys64/usr/local/bin/gcc-ar15"
       - "C:/msys64/usr/bin/gcc-ar15.com"
       - "C:/msys64/usr/bin/gcc-ar15.exe"
       - "C:/msys64/usr/bin/gcc-ar15"
-      - "D:/applications/Microsoft VS Code/gcc-ar15.com"
-      - "D:/applications/Microsoft VS Code/gcc-ar15.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ar15"
-      - "C:/Program Files/Python314/Scripts/gcc-ar15.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ar15.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ar15"
-      - "C:/Program Files/Python314/gcc-ar15.com"
-      - "C:/Program Files/Python314/gcc-ar15.exe"
-      - "C:/Program Files/Python314/gcc-ar15"
       - "C:/Windows/System32/gcc-ar15.com"
       - "C:/Windows/System32/gcc-ar15.exe"
       - "C:/Windows/System32/gcc-ar15"
@@ -1079,58 +820,30 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15"
-      - "C:/Windows/System32/OpenSSH/gcc-ar15.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar15.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar15"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar15.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar15.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar15"
-      - "C:/Program Files/CMake/bin/gcc-ar15.com"
-      - "C:/Program Files/CMake/bin/gcc-ar15.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar15"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar15.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar15.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar15"
-      - "D:/applications/Git/cmd/gcc-ar15.com"
-      - "D:/applications/Git/cmd/gcc-ar15.exe"
-      - "D:/applications/Git/cmd/gcc-ar15"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar15.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar15.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar15"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar15.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar15.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar15"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar15.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar15.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar15"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar15.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar15.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar15"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar15.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar15.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar15"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar15.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar15.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar15"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar15.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar15.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar15"
       - "C:/msys64/mingw64/bin/gcc-ar.com"
     found: "C:/msys64/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -1155,39 +868,25 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.2.com"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.2.exe"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.2"
       - "C:/msys64/usr/bin/gcc-ranlib-15.2.com"
       - "C:/msys64/usr/bin/gcc-ranlib-15.2.exe"
       - "C:/msys64/usr/bin/gcc-ranlib-15.2"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.2.com"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.2.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.2"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.2.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.2"
-      - "C:/Program Files/Python314/gcc-ranlib-15.2.com"
-      - "C:/Program Files/Python314/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Python314/gcc-ranlib-15.2"
       - "C:/Windows/System32/gcc-ranlib-15.2.com"
       - "C:/Windows/System32/gcc-ranlib-15.2.exe"
       - "C:/Windows/System32/gcc-ranlib-15.2"
@@ -1200,48 +899,24 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.2.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.2"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.2.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.2.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.2"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.2.com"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.2.exe"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.2"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.2.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.2.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.2"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.2.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.2.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.2"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.2.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.2.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.2"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.com"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.exe"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15"
       - "C:/msys64/usr/bin/gcc-ranlib-15.com"
       - "C:/msys64/usr/bin/gcc-ranlib-15.exe"
       - "C:/msys64/usr/bin/gcc-ranlib-15"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.com"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15"
-      - "C:/Program Files/Python314/gcc-ranlib-15.com"
-      - "C:/Program Files/Python314/gcc-ranlib-15.exe"
-      - "C:/Program Files/Python314/gcc-ranlib-15"
       - "C:/Windows/System32/gcc-ranlib-15.com"
       - "C:/Windows/System32/gcc-ranlib-15.exe"
       - "C:/Windows/System32/gcc-ranlib-15"
@@ -1254,48 +929,24 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.com"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.exe"
-      - "D:/applications/Git/cmd/gcc-ranlib-15"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15"
       - "C:/msys64/mingw64/bin/gcc-ranlib15.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib15.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib15"
+      - "C:/msys64/usr/local/bin/gcc-ranlib15.com"
+      - "C:/msys64/usr/local/bin/gcc-ranlib15.exe"
+      - "C:/msys64/usr/local/bin/gcc-ranlib15"
       - "C:/msys64/usr/bin/gcc-ranlib15.com"
       - "C:/msys64/usr/bin/gcc-ranlib15.exe"
       - "C:/msys64/usr/bin/gcc-ranlib15"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib15.com"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib15.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib15"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib15.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib15.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib15"
-      - "C:/Program Files/Python314/gcc-ranlib15.com"
-      - "C:/Program Files/Python314/gcc-ranlib15.exe"
-      - "C:/Program Files/Python314/gcc-ranlib15"
       - "C:/Windows/System32/gcc-ranlib15.com"
       - "C:/Windows/System32/gcc-ranlib15.exe"
       - "C:/Windows/System32/gcc-ranlib15"
@@ -1308,58 +959,72 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib15.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib15.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib15"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib15.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib15.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib15"
-      - "C:/Program Files/CMake/bin/gcc-ranlib15.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib15.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib15"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib15.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib15.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib15"
-      - "D:/applications/Git/cmd/gcc-ranlib15.com"
-      - "D:/applications/Git/cmd/gcc-ranlib15.exe"
-      - "D:/applications/Git/cmd/gcc-ranlib15"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib15.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib15.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib15"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib15.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib15.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib15"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib15.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib15.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib15"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib15.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib15.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib15"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib15.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib15.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib15"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib15.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib15.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib15"
       - "C:/msys64/mingw64/bin/gcc-ranlib.com"
     found: "C:/msys64/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "C:/msys64/mingw64/bin/"
+    searched_directories:
+      - "C:/msys64/mingw64/bin/c++.com"
+    found: "C:/msys64/mingw64/bin/c++.exe"
+    search_context:
+      ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -1388,26 +1053,16 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "message-v1"
     backtrace:
@@ -1417,7 +1072,7 @@ events:
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/msys64/mingw64/bin/g++.exe 
+      Compiler: C:/msys64/mingw64/bin/c++.exe 
       Build flags: 
       Id flags:  
       
@@ -1454,39 +1109,25 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ar-15.2.com"
       - "C:/msys64/mingw64/bin/gcc-ar-15.2.exe"
       - "C:/msys64/mingw64/bin/gcc-ar-15.2"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.2.com"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.2.exe"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.2"
       - "C:/msys64/usr/bin/gcc-ar-15.2.com"
       - "C:/msys64/usr/bin/gcc-ar-15.2.exe"
       - "C:/msys64/usr/bin/gcc-ar-15.2"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.2.com"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.2.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.2"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.2.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.2.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.2"
-      - "C:/Program Files/Python314/gcc-ar-15.2.com"
-      - "C:/Program Files/Python314/gcc-ar-15.2.exe"
-      - "C:/Program Files/Python314/gcc-ar-15.2"
       - "C:/Windows/System32/gcc-ar-15.2.com"
       - "C:/Windows/System32/gcc-ar-15.2.exe"
       - "C:/Windows/System32/gcc-ar-15.2"
@@ -1499,48 +1140,24 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.2"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.2"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.2.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.2.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.2"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.2.com"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.2.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.2"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.2.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.2.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.2"
-      - "D:/applications/Git/cmd/gcc-ar-15.2.com"
-      - "D:/applications/Git/cmd/gcc-ar-15.2.exe"
-      - "D:/applications/Git/cmd/gcc-ar-15.2"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.2.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.2.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.2"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.2"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.2.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.2.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.2"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.2.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.2.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.2"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.2.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.2.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.2"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.2.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.2.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.2"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.2"
       - "C:/msys64/mingw64/bin/gcc-ar-15.com"
       - "C:/msys64/mingw64/bin/gcc-ar-15.exe"
       - "C:/msys64/mingw64/bin/gcc-ar-15"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.com"
+      - "C:/msys64/usr/local/bin/gcc-ar-15.exe"
+      - "C:/msys64/usr/local/bin/gcc-ar-15"
       - "C:/msys64/usr/bin/gcc-ar-15.com"
       - "C:/msys64/usr/bin/gcc-ar-15.exe"
       - "C:/msys64/usr/bin/gcc-ar-15"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.com"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ar-15"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ar-15"
-      - "C:/Program Files/Python314/gcc-ar-15.com"
-      - "C:/Program Files/Python314/gcc-ar-15.exe"
-      - "C:/Program Files/Python314/gcc-ar-15"
       - "C:/Windows/System32/gcc-ar-15.com"
       - "C:/Windows/System32/gcc-ar-15.exe"
       - "C:/Windows/System32/gcc-ar-15"
@@ -1553,48 +1170,24 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar-15"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar-15"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar-15"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.com"
-      - "C:/Program Files/CMake/bin/gcc-ar-15.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar-15"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar-15"
-      - "D:/applications/Git/cmd/gcc-ar-15.com"
-      - "D:/applications/Git/cmd/gcc-ar-15.exe"
-      - "D:/applications/Git/cmd/gcc-ar-15"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar-15"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar-15"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar-15"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar-15"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar-15"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar-15"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar-15"
       - "C:/msys64/mingw64/bin/gcc-ar15.com"
       - "C:/msys64/mingw64/bin/gcc-ar15.exe"
       - "C:/msys64/mingw64/bin/gcc-ar15"
+      - "C:/msys64/usr/local/bin/gcc-ar15.com"
+      - "C:/msys64/usr/local/bin/gcc-ar15.exe"
+      - "C:/msys64/usr/local/bin/gcc-ar15"
       - "C:/msys64/usr/bin/gcc-ar15.com"
       - "C:/msys64/usr/bin/gcc-ar15.exe"
       - "C:/msys64/usr/bin/gcc-ar15"
-      - "D:/applications/Microsoft VS Code/gcc-ar15.com"
-      - "D:/applications/Microsoft VS Code/gcc-ar15.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ar15"
-      - "C:/Program Files/Python314/Scripts/gcc-ar15.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ar15.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ar15"
-      - "C:/Program Files/Python314/gcc-ar15.com"
-      - "C:/Program Files/Python314/gcc-ar15.exe"
-      - "C:/Program Files/Python314/gcc-ar15"
       - "C:/Windows/System32/gcc-ar15.com"
       - "C:/Windows/System32/gcc-ar15.exe"
       - "C:/Windows/System32/gcc-ar15"
@@ -1607,58 +1200,30 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ar15"
-      - "C:/Windows/System32/OpenSSH/gcc-ar15.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ar15.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ar15"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar15.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar15.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ar15"
-      - "C:/Program Files/CMake/bin/gcc-ar15.com"
-      - "C:/Program Files/CMake/bin/gcc-ar15.exe"
-      - "C:/Program Files/CMake/bin/gcc-ar15"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar15.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar15.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ar15"
-      - "D:/applications/Git/cmd/gcc-ar15.com"
-      - "D:/applications/Git/cmd/gcc-ar15.exe"
-      - "D:/applications/Git/cmd/gcc-ar15"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar15.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar15.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ar15"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar15.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar15.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ar15"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar15.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar15.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ar15"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar15.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar15.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ar15"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar15.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar15.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ar15"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar15.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar15.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ar15"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar15.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar15.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ar15"
       - "C:/msys64/mingw64/bin/gcc-ar.com"
     found: "C:/msys64/mingw64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -1683,39 +1248,25 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
     searched_directories:
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.2"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.2.com"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.2.exe"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.2"
       - "C:/msys64/usr/bin/gcc-ranlib-15.2.com"
       - "C:/msys64/usr/bin/gcc-ranlib-15.2.exe"
       - "C:/msys64/usr/bin/gcc-ranlib-15.2"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.2.com"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.2.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.2"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.2.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.2"
-      - "C:/Program Files/Python314/gcc-ranlib-15.2.com"
-      - "C:/Program Files/Python314/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/Python314/gcc-ranlib-15.2"
       - "C:/Windows/System32/gcc-ranlib-15.2.com"
       - "C:/Windows/System32/gcc-ranlib-15.2.exe"
       - "C:/Windows/System32/gcc-ranlib-15.2"
@@ -1728,48 +1279,24 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.2"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.2"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.2.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.2"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.2"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.2.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.2.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.2"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.2.com"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.2.exe"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.2"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.2"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.2.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.2.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.2"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.2"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.2.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.2.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.2"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.2.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.2.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.2"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.2"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib-15"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.com"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15.exe"
+      - "C:/msys64/usr/local/bin/gcc-ranlib-15"
       - "C:/msys64/usr/bin/gcc-ranlib-15.com"
       - "C:/msys64/usr/bin/gcc-ranlib-15.exe"
       - "C:/msys64/usr/bin/gcc-ranlib-15"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.com"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib-15"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib-15"
-      - "C:/Program Files/Python314/gcc-ranlib-15.com"
-      - "C:/Program Files/Python314/gcc-ranlib-15.exe"
-      - "C:/Program Files/Python314/gcc-ranlib-15"
       - "C:/Windows/System32/gcc-ranlib-15.com"
       - "C:/Windows/System32/gcc-ranlib-15.exe"
       - "C:/Windows/System32/gcc-ranlib-15"
@@ -1782,48 +1309,24 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib-15"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib-15"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib-15"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib-15"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib-15"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.com"
-      - "D:/applications/Git/cmd/gcc-ranlib-15.exe"
-      - "D:/applications/Git/cmd/gcc-ranlib-15"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib-15"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-15"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib-15"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib-15"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib-15"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib-15"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib-15"
       - "C:/msys64/mingw64/bin/gcc-ranlib15.com"
       - "C:/msys64/mingw64/bin/gcc-ranlib15.exe"
       - "C:/msys64/mingw64/bin/gcc-ranlib15"
+      - "C:/msys64/usr/local/bin/gcc-ranlib15.com"
+      - "C:/msys64/usr/local/bin/gcc-ranlib15.exe"
+      - "C:/msys64/usr/local/bin/gcc-ranlib15"
       - "C:/msys64/usr/bin/gcc-ranlib15.com"
       - "C:/msys64/usr/bin/gcc-ranlib15.exe"
       - "C:/msys64/usr/bin/gcc-ranlib15"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib15.com"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib15.exe"
-      - "D:/applications/Microsoft VS Code/gcc-ranlib15"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib15.com"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib15.exe"
-      - "C:/Program Files/Python314/Scripts/gcc-ranlib15"
-      - "C:/Program Files/Python314/gcc-ranlib15.com"
-      - "C:/Program Files/Python314/gcc-ranlib15.exe"
-      - "C:/Program Files/Python314/gcc-ranlib15"
       - "C:/Windows/System32/gcc-ranlib15.com"
       - "C:/Windows/System32/gcc-ranlib15.exe"
       - "C:/Windows/System32/gcc-ranlib15"
@@ -1836,58 +1339,30 @@ events:
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15.com"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15.exe"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/gcc-ranlib15"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib15.com"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib15.exe"
-      - "C:/Windows/System32/OpenSSH/gcc-ranlib15"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib15.com"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib15.exe"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/gcc-ranlib15"
-      - "C:/Program Files/CMake/bin/gcc-ranlib15.com"
-      - "C:/Program Files/CMake/bin/gcc-ranlib15.exe"
-      - "C:/Program Files/CMake/bin/gcc-ranlib15"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib15.com"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib15.exe"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/gcc-ranlib15"
-      - "D:/applications/Git/cmd/gcc-ranlib15.com"
-      - "D:/applications/Git/cmd/gcc-ranlib15.exe"
-      - "D:/applications/Git/cmd/gcc-ranlib15"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib15.com"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib15.exe"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/gcc-ranlib15"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.com"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15.exe"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/gcc-ranlib15"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib15.com"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib15.exe"
-      - "D:/applications/Microsoft VS Code/bin/gcc-ranlib15"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib15.com"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib15.exe"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/gcc-ranlib15"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib15.com"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib15.exe"
+      - "C:/msys64/usr/bin/site_perl/gcc-ranlib15"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib15.com"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib15.exe"
+      - "C:/msys64/usr/bin/vendor_perl/gcc-ranlib15"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib15.com"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib15.exe"
+      - "C:/msys64/usr/bin/core_perl/gcc-ranlib15"
       - "C:/msys64/mingw64/bin/gcc-ranlib.com"
     found: "C:/msys64/mingw64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
   -
     kind: "find-v1"
     backtrace:
@@ -1912,23 +1387,15 @@ events:
       - "windres"
     candidate_directories:
       - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/usr/local/bin/"
       - "C:/msys64/usr/bin/"
-      - "D:/applications/Microsoft VS Code/"
-      - "C:/Program Files/Python314/Scripts/"
-      - "C:/Program Files/Python314/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
       - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "D:/applications/Git/cmd/"
-      - "C:/Windows/System32/config/systemprofile/AppData/Local/Muse Hub/lib/"
-      - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps/"
-      - "D:/applications/Microsoft VS Code/bin/"
-      - "C:/Users/ranjha/AppData/Local/Muse Hub/lib/"
+      - "C:/msys64/usr/bin/site_perl/"
+      - "C:/msys64/usr/bin/vendor_perl/"
+      - "C:/msys64/usr/bin/core_perl/"
       - "C:/msys64/mingw64/bin/"
       - "C:/msys64/mingw64/sbin/"
       - "C:/msys64/mingw64/"
@@ -1947,26 +1414,16 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
         - "C:\\msys64\\usr\\bin"
-        - "D:/applications/Microsoft VS Code"
-        - "C:\\Program Files\\Python314\\Scripts\\"
-        - "C:/Program Files/Python314/"
-        - "C:\\Windows\\system32"
-        - "C:/Windows"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
-        - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR"
-        - "C:\\msys64\\mingw64\\bin"
-        - "C:/Program Files/CMake/bin"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "D:/applications/Git/cmd"
-        - "C:\\Windows\\system32\\config\\systemprofile\\AppData\\Local\\Muse Hub\\lib"
-        - "C:/Users/ranjha/AppData/Local/Microsoft/WindowsApps"
-        - "D:\\applications\\Microsoft VS Code\\bin"
-        - "C:/Users/ranjha/AppData/Local/Muse Hub/lib"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/PhysicsEngine"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/msys64/mingw64"
@@ -1983,8 +1440,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-20mpbk"
-      binary: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-20mpbk"
+      source: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-3hmq07"
+      binary: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-3hmq07"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1993,22 +1450,19 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-20mpbk'
+        Change Dir: 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-3hmq07'
         
-        Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_134af/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_134af.dir\\build.make CMakeFiles/cmTC_134af.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-20mpbk'
-        Building C object CMakeFiles/cmTC_134af.dir/CMakeCCompilerABI.c.obj
-        C:\\msys64\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj -c C:\\msys64\\mingw64\\share\\cmake\\Modules\\CMakeCCompilerABI.c
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_461fa
+        [1/2] C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
-        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\gcc.exe
+        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_134af.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\msys64\\mingw64\\share\\cmake\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_134af.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc0FBKId.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_461fa.dir/'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_461fa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\msys64\\tmp\\ccMbzpQd.s
         GNU C23 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2027,16 +1481,15 @@ events:
          C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: feaaa8b8d0ead308dc62d839201f7330
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_134af.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc0FBKId.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_461fa.dir/'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj C:\\msys64\\tmp\\ccMbzpQd.s
         GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_134af.exe
-        C:\\msys64\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_134af.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.'
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\cc.exe  -v -Wl,-v CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj -o cmTC_461fa.exe -Wl,--out-implib,libcmTC_461fa.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
-        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\gcc.exe
+        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe
         COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
@@ -2045,16 +1498,12 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_134af.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_134af.'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc9VOpVl.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_134af.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_134af.dir/objects.a --no-whole-archive --out-implib libcmTC_134af.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_461fa.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_461fa.'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccziZ01k.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_461fa.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_461fa.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc9VOpVl.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_134af.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_134af.dir/objects.a --no-whole-archive --out-implib libcmTC_134af.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccziZ01k.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_461fa.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_461fa.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_134af.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_134af.'
-        C:\\msys64\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_134af.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_134af.dir/objects.a @CMakeFiles\\cmTC_134af.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_134af.dir/objects.a -Wl,--no-whole-archive -o cmTC_134af.exe -Wl,--out-implib,libcmTC_134af.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-20mpbk'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_461fa.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_461fa.'
         
       exitCode: 0
   -
@@ -2087,22 +1536,19 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-20mpbk']
+        ignore line: [Change Dir: 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-3hmq07']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_134af/fast]
-        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_134af.dir\\build.make CMakeFiles/cmTC_134af.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-20mpbk']
-        ignore line: [Building C object CMakeFiles/cmTC_134af.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\msys64\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj -c C:\\msys64\\mingw64\\share\\cmake\\Modules\\CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_461fa]
+        ignore line: [[1/2] C:\\msys64\\mingw64\\bin\\cc.exe   -v -o CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\gcc.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_134af.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\msys64\\mingw64\\share\\cmake\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_134af.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc0FBKId.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_461fa.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_461fa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\msys64\\tmp\\ccMbzpQd.s]
         ignore line: [GNU C23 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2121,8 +1567,8 @@ events:
         ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: feaaa8b8d0ead308dc62d839201f7330]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_134af.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc0FBKId.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_461fa.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj C:\\msys64\\tmp\\ccMbzpQd.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
@@ -2133,11 +1579,10 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_134af.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_134af.exe]
-        ignore line: [C:\\msys64\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_134af.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\cc.exe  -v -Wl -v CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj -o cmTC_461fa.exe -Wl --out-implib libcmTC_461fa.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\gcc.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\cc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
@@ -2153,13 +1598,13 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_134af.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_134af.']
-        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc9VOpVl.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_134af.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_134af.dir/objects.a --no-whole-archive --out-implib libcmTC_134af.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_461fa.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_461fa.']
+        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccziZ01k.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_461fa.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_461fa.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc9VOpVl.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\msys64\\tmp\\ccziZ01k.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -2181,7 +1626,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_134af.exe] ==> ignore
+          arg [cmTC_461fa.exe] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2191,11 +1636,9 @@ events:
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_134af.dir/objects.a] ==> ignore
-          arg [--no-whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_134af.dll.a] ==> ignore
+          arg [libcmTC_461fa.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2220,7 +1663,7 @@ events:
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc9VOpVl.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_134af.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_134af.dir/objects.a --no-whole-archive --out-implib libcmTC_134af.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccziZ01k.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_461fa.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_461fa.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_461fa.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'C': C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -2261,8 +1704,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cfq0zd"
-      binary: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cfq0zd"
+      source: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-c1eydd"
+      binary: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-c1eydd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2272,22 +1715,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cfq0zd'
+        Change Dir: 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-c1eydd'
         
-        Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_bd83f/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_bd83f.dir\\build.make CMakeFiles/cmTC_bd83f.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cfq0zd'
-        Building CXX object CMakeFiles/cmTC_bd83f.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\msys64\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\msys64\\mingw64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_aaa86
+        [1/2] C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
-        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\g++.exe
+        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_bd83f.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\msys64\\mingw64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_bd83f.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc1fGxU6.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_aaa86.dir/'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_aaa86.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\msys64\\tmp\\ccur1p5h.s
         GNU C++17 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2312,16 +1752,15 @@ events:
          C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_bd83f.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc1fGxU6.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_aaa86.dir/'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj C:\\msys64\\tmp\\ccur1p5h.s
         GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_bd83f.exe
-        C:\\msys64\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_bd83f.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_aaa86.exe -Wl,--out-implib,libcmTC_aaa86.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
-        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\g++.exe
+        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
         Target: x86_64-w64-mingw32
         Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++
@@ -2330,16 +1769,12 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd83f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bd83f.'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc4am5Za.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_bd83f.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_bd83f.dir/objects.a --no-whole-archive --out-implib libcmTC_bd83f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aaa86.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_aaa86.'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccUQuxHt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_aaa86.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_aaa86.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc4am5Za.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_bd83f.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_bd83f.dir/objects.a --no-whole-archive --out-implib libcmTC_bd83f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccUQuxHt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_aaa86.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_aaa86.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45.1
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd83f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bd83f.'
-        C:\\msys64\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_bd83f.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_bd83f.dir/objects.a @CMakeFiles\\cmTC_bd83f.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\g++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_bd83f.dir/objects.a -Wl,--no-whole-archive -o cmTC_bd83f.exe -Wl,--out-implib,libcmTC_bd83f.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cfq0zd'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aaa86.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_aaa86.'
         
       exitCode: 0
   -
@@ -2378,22 +1813,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cfq0zd']
+        ignore line: [Change Dir: 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-c1eydd']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_bd83f/fast]
-        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_bd83f.dir\\build.make CMakeFiles/cmTC_bd83f.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/CMakeScratch/TryCompile-cfq0zd']
-        ignore line: [Building CXX object CMakeFiles/cmTC_bd83f.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\msys64\\mingw64\\bin\\g++.exe   -v -o CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\msys64\\mingw64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_aaa86]
+        ignore line: [[1/2] C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\g++.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_bd83f.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\msys64\\mingw64\\share\\cmake\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_bd83f.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc1fGxU6.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_aaa86.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_aaa86.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\msys64\\tmp\\ccur1p5h.s]
         ignore line: [GNU C++17 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2418,8 +1850,8 @@ events:
         ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_bd83f.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc1fGxU6.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_aaa86.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj C:\\msys64\\tmp\\ccur1p5h.s]
         ignore line: [GNU assembler version 2.45.1 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45.1]
         ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
@@ -2430,11 +1862,10 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_bd83f.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_bd83f.exe]
-        ignore line: [C:\\msys64\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_bd83f.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_aaa86.exe -Wl --out-implib libcmTC_aaa86.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\g++.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
         ignore line: [Target: x86_64-w64-mingw32]
         ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --with-local-prefix=/mingw64/local --with-native-system-header-dir=/mingw64/include --libexecdir=/mingw64/lib --enable-bootstrap --enable-checking=release --with-arch=nocona --with-tune=generic --enable-mingw-wildcard --enable-languages=c,lto,c++,fortran,ada,objc,obj-c++,jit --enable-shared --enable-static --enable-libatomic --enable-threads=posix --enable-graphite --enable-fully-dynamic-string --enable-libstdcxx-backtrace=yes --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --disable-libstdcxx-pch --enable-lto --enable-libgomp --disable-libssp --disable-multilib --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-libiconv --with-system-zlib --with-gmp=/mingw64 --with-mpfr=/mingw64 --with-mpc=/mingw64 --with-isl=/mingw64 --with-pkgversion='Rev8, Built by MSYS2 project' --with-bugurl=https://github.com/msys2/MINGW-packages/issues --with-gnu-as --with-gnu-ld --with-libstdcxx-zoneinfo=yes --disable-libstdcxx-debug --enable-plugin --with-boot-ldflags=-static-libstdc++ --with-stage1-ldflags=-static-libstdc++]
@@ -2450,13 +1881,13 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd83f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_bd83f.']
-        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc4am5Za.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_bd83f.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_bd83f.dir/objects.a --no-whole-archive --out-implib libcmTC_bd83f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_aaa86.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_aaa86.']
+        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccUQuxHt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_aaa86.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_aaa86.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc4am5Za.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\msys64\\tmp\\ccUQuxHt.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2478,7 +1909,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_bd83f.exe] ==> ignore
+          arg [cmTC_aaa86.exe] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2488,11 +1919,9 @@ events:
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_bd83f.dir/objects.a] ==> ignore
-          arg [--no-whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_bd83f.dll.a] ==> ignore
+          arg [libcmTC_aaa86.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2518,7 +1947,7 @@ events:
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\ranjha\\AppData\\Local\\Temp\\cc4am5Za.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_bd83f.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_bd83f.dir/objects.a --no-whole-archive --out-implib libcmTC_bd83f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccUQuxHt.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_aaa86.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_aaa86.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_aaa86.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'CXX': C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -2548,4 +1977,198 @@ events:
     message: |
       Running the CXX compiler's linker: "C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.45.1
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:12 (find_package)"
+    name: "SFML"
+    components:
+      -
+        name: "graphics"
+        required: true
+        found: false
+      -
+        name: "window"
+        required: true
+        found: false
+      -
+        name: "system"
+        required: true
+        found: false
+    configs:
+      -
+        filename: "SFMLConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "sfml-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "2.5"
+      version_complete: "2.5"
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "SFML"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/pkgRedirects/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ranjha/Desktop/My furnace/Physics-Engine/build/CMakeFiles/pkgRedirects/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/mingw64/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/mingw64/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/mingw64/lib/cmake/SFML/SFMLConfig.cmake"
+        mode: "config"
+        reason: "insufficient_version"
+        message: "The version found is not compatible with the version requested."
+      -
+        path: "C:/msys64/mingw64/lib/cmake/SFML/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/local/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/local/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/bin/site_perl/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/bin/site_perl/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/bin/vendor_perl/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/bin/vendor_perl/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/bin/core_perl/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/msys64/usr/bin/core_perl/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/SFMLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/sfml-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:/msys64/mingw64"
+      ENV{PATH}:
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\usr\\local\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\msys64\\usr\\bin"
+        - "C:\\Windows\\System32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\msys64\\usr\\bin\\site_perl"
+        - "C:\\msys64\\usr\\bin\\vendor_perl"
+        - "C:\\msys64\\usr\\bin\\core_perl"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/PhysicsEngine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/msys64/mingw64"
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/msys64/mingw64"
+        - "C:/Program Files (x86)/PhysicsEngine"
 ...
